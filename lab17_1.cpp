@@ -46,8 +46,8 @@ int main(){
 
 	for (int i=0;i<nA;i++) delete [] C[i];
 	delete [] C;
-    delete A;
-	delete B;
+    delete [] A;
+	delete [] B;
 
 	return 0;
 }

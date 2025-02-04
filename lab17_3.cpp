@@ -4,17 +4,17 @@
 #include<vector>
 using namespace std;
 
-______________ randomVector(unsigned int N){	
-    vector<int> v;
-    for(unsigned int i = 0; i < N; i++) v.______________(rand()%10);
-    ______________;
+int randomVector(unsigned int N){	
+    vector<int> v(N);
+    for(unsigned int i = 0; i < N; i++) v.push_back(rand()%10);
+    return v;
 }
 
-______________ showVector(______________){
+void showVector(vector<int> n){
 	cout << "[";
-	for(unsigned int i = 0; _____________________; i++){
-		cout << _________________;
-		if(_________________) cout << "]";
+	for(unsigned int i = 0; i < n.size(); i++){
+		cout << n[i];
+		if(i == n.size()) cout << "]";
 		else cout << " ";
 	}
 }
